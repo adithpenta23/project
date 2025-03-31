@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 function Navbar() {
     return (  
         <nav class="navbar navbar-expand-lg border-bottom" style={{backgroundColor:"#FFF"}}>
@@ -11,19 +12,16 @@ function Navbar() {
       <form class="d-flex" role="search">
         <ul class="navbar-nav  mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Signup</a>
+          <Link class="nav-link active" aria-current="page" to="/">Signup</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">About</a>
+          <Link class="nav-link active" to="/about">About</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Products</a>
+          <Link class="nav-link active" to="/pricing">Pricing</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Support</a>
+          <Link class="nav-link active" to="support">Support</Link>
         </li>
         
         </ul>

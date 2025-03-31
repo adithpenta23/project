@@ -4,7 +4,7 @@ import Hero from './Hero';
 import Team from './Team';
 function Aboutpage() {
     return (
-        <><Navbar /><Hero /><Team /></>
+        <><Hero /><Team /></>
        
       );
 }
